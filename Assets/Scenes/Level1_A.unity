@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -431,6 +430,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1930300910380831704, guid: 96524b76c6a28e54d8bf1b2e3d7ddb55, type: 3}
       insertIndex: -1
       addedObject: {fileID: 289541583}
+    - targetCorrespondingSourceObject: {fileID: 1930300910380831704, guid: 96524b76c6a28e54d8bf1b2e3d7ddb55, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 289541585}
   m_SourcePrefab: {fileID: 100100000, guid: 96524b76c6a28e54d8bf1b2e3d7ddb55, type: 3}
 --- !u!1 &289541582 stripped
 GameObject:
@@ -454,6 +456,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1930300910380831700, guid: 96524b76c6a28e54d8bf1b2e3d7ddb55, type: 3}
   m_PrefabInstance: {fileID: 289541581}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &289541585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289541582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902dfcea23c7a0040af5853cea49401e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gem: {fileID: 1007615063}
+  background: {fileID: 1318917124}
+  teleportDestination: Level1_B
 --- !u!1001 &316813216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1035,8 +1052,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 748992279688134212, guid: b65431e0b138af345bf081447c79d45a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1007615064}
   m_SourcePrefab: {fileID: 100100000, guid: b65431e0b138af345bf081447c79d45a, type: 3}
+--- !u!198 &970249633 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5204170699968437821, guid: 57823928e9a093c42983a9b1bc51fd93, type: 3}
+  m_PrefabInstance: {fileID: 590152237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1007615063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 748992279688134212, guid: b65431e0b138af345bf081447c79d45a, type: 3}
+  m_PrefabInstance: {fileID: 946430337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1007615064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007615063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb10d254476998e49ad44719f02e08de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleporterDust: {fileID: 970249633}
 --- !u!4 &1033225201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 471467993218757723, guid: 6593d5fdd5d52024f917ce854fedbce8, type: 3}

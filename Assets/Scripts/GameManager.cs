@@ -18,8 +18,7 @@ public class GameManager : MonoBehaviour
 
     // A reference to a checkpoint with an initial value of the start of the level
     public Vector3 checkPoint = new Vector3(-4.7f, 0.6f, 0);
-    
-
+   
     void Start()
     {
         // make sure the pop up is not active
@@ -31,7 +30,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-
+        if(Input.GetButton("Cancel"))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     // Set the game over text and display the popup
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateCheckPoint(Vector3 newCheckPoint)
     {
-        
+        Reset("Level2");
     }
 
     // load the specified scene
